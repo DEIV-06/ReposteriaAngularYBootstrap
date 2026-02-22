@@ -10,9 +10,6 @@
   overflow: hidden;
 }
 
-/* Si quieres usar imagen local, cambia a:
-   background-image: url('/assets/images/hero-banner.jpg');
-*/
 
 .hero-overlay {
   position: absolute;
