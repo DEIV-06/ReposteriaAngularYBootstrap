@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* PALETA AZUL TERCIOPELO */
+:root {
+  --primary-color: #4361EE;
+  --secondary-color: #7209B7;
+  --accent-color: #F72585;
+  --dark-color: #10002B;
+  --light-color: #F0EFFF;
+  --text-color: #333;
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.btn-custom-primary {
+  background: linear-gradient(135deg, #4361EE 0%, #7209B7 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(67, 97, 238, 0.4);
+}
+
+.btn-custom-primary:hover {
+  background: linear-gradient(135deg, #3651d4 0%, #5f08a0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.5);
+  color: white;
+}
