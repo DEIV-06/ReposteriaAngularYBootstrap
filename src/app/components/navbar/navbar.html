@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" routerLink="/">
+      <div class="logo-container">
+        <i class="bi bi-shop logo-icon"></i>
+      </div>
+      <div class="brand-text ms-3">
+        <span class="brand-name">Dulces Elvira De Nicolas</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        
+        <!-- Link Inicio -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <i class="bi bi-house-door me-1"></i>
+            Inicio
+          </a>
+        </li>
+
+        <!-- Dropdown Productos -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-grid-3x3-gap me-1"></i>
+            Productos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-custom">
+            <li>
+              <a class="dropdown-item" routerLink="/tartas">
+                <i class="bi bi-cake2 me-2" style="color: #4361EE;"></i>
+                <div class="dropdown-item-content">
+                  <span class="dropdown-item-title">Tartas</span>
+                  <small class="dropdown-item-desc">Tartas artesanales</small>
+                </div>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" routerLink="/cupcakes">
+                <i class="bi bi-cup-straw me-2" style="color: #7209B7;"></i>
+                <div class="dropdown-item-content">
+                  <span class="dropdown-item-title">Cupcakes</span>
+                  <small class="dropdown-item-desc">Pequeñas delicias</small>
+                </div>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" routerLink="/galletas">
+                <i class="bi bi-cookie me-2" style="color: #F72585;"></i>
+                <div class="dropdown-item-content">
+                  <span class="dropdown-item-title">Galletas</span>
+                  <small class="dropdown-item-desc">Crujientes y sabrosas</small>
+                </div>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item" routerLink="/pasteles">
+                <i class="bi bi-gift me-2" style="color: #4361EE;"></i>
+                <div class="dropdown-item-content">
+                  <span class="dropdown-item-title">Pasteles</span>
+                  <small class="dropdown-item-desc">Bizcochos caseros</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Link Contacto -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto" routerLinkActive="active">
+            <i class="bi bi-envelope me-1"></i>
+            Contacto
+          </a>
+        </li>
+
+        <!-- Botón CTA -->
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-custom-primary" routerLink="/contacto">
+            <i class="bi bi-telephone me-2"></i>
+            Hacer Pedido
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
