@@ -44,7 +44,7 @@
   font-size: 1.5rem;
   margin-bottom: 3rem;
   opacity: 0.95;
-  animation: fadeUp 1s ease 0.2s backwards;
+  /*animation: fadeUp 1s ease 0.2s backwards;*/
 }
 
 .hero-buttons {
@@ -52,7 +52,7 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  animation: fadeUp 1s ease 0.4s backwards;
+  /*animation: fadeUp 1s ease 0.4s backwards;*/
 }
 
 .btn-hero-primary,
@@ -104,17 +104,17 @@
   width: 100%;
   height: 80px;
 }
-
+/*
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(990px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
+*/
 
 @media (max-width: 768px) {
   .hero-banner {
